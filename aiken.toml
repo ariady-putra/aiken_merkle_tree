@@ -1,5 +1,7 @@
 name = "aiken-lang/aiken_merkle_tree"
 version = "0.0.0"
+compiler = "v1.1.9"
+plutus = "v3"
 license = "Apache-2.0"
 description = "Aiken contracts for project 'aiken-lang/aiken-merkle-tree'"
 
@@ -10,5 +12,17 @@ platform = "github"
 
 [[dependencies]]
 name = "aiken-lang/stdlib"
-version = "1.7.0"
+version = "2.2.0"
 source = "github"
+
+[[dependencies]]
+name = "aiken-lang/fuzz"
+version = "2.1.0"
+source = "github"
+
+[[dependencies]]
+name = "aiken-extra/fuzz_util"
+version = "main"
+source = "github"
+
+[config]

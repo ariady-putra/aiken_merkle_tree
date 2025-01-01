@@ -22,7 +22,7 @@ source = "github"
 
 [[dependencies]]
 name = "aiken-extra/fuzz_util"
-version = "main"
+version = "1.220.202501"
 source = "github"
 
 [config]

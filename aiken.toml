@@ -21,8 +21,8 @@ version = "2.1.0"
 source = "github"
 
 [[dependencies]]
-name = "aiken-extra/fuzz_util"
-version = "1.220.202501"
+name = "aiken-extra/test_kit"
+version = "helium"
 source = "github"
 
 [config]

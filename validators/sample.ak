@@ -7,7 +7,8 @@ use aiken/collection/list
 use aiken/fuzz
 use aiken_merkle_tree/mt.{Proof, Root, from_list, get_proof, is_member, root}
 use cardano/transaction.{OutputReference, Transaction}
-use fuzz_util/fuzzer.{data_fuzzer, output_reference_fuzzer}
+use test_kit/fuzzy
+use test_kit/fuzzy/fuzzer.{data_fuzzer, output_reference_fuzzer}
 
 pub type MyDatum {
   merkle_root: Root,
@@ -102,7 +103,7 @@ test spend_validator_mouse() {
 }
 
 test spend_validator_prop(
-  ((data, user_data), placeholder_utxo) via fuzzer.tuple(
+  ((data, user_data), placeholder_utxo) via fuzzy.tuple(
     fuzz.list_with_elem(data_fuzzer()),
     output_reference_fuzzer(),
   ),

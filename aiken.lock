@@ -12,8 +12,8 @@ version = "2.1.0"
 source = "github"
 
 [[requirements]]
-name = "aiken-extra/fuzz_util"
-version = "1.220.202501"
+name = "aiken-extra/test_kit"
+version = "helium"
 source = "github"
 
 [[packages]]
@@ -29,9 +29,10 @@ requirements = []
 source = "github"
 
 [[packages]]
-name = "aiken-extra/fuzz_util"
-version = "1.220.202501"
+name = "aiken-extra/test_kit"
+version = "helium"
 requirements = []
 source = "github"
 
 [etags]
+"aiken-extra/test_kit@helium" = [{ secs_since_epoch = 1736942278, nanos_since_epoch = 989483773 }, "8aeaede15f69f88f8eacc139d29696e0d7860b0e198debb21cdf082234d49d56"]
